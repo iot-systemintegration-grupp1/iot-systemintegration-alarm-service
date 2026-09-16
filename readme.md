@@ -1,3 +1,9 @@
+## Alarm Service
+
+Individual project for the System Integration course.
+
+This project is part of a distributed IoT monitoring system. A physical ESP32-S3 with a DHT11 sensor sends temperature measurements as JSON to the group's Integration Service. The Integration Service converts the data into a SOAP request and sends it to this Alarm Service.
+
 The Alarm Service evaluates the measurement against thresholds stored in Azure SQL and stores created alarms in the database.
 
 # System flow
