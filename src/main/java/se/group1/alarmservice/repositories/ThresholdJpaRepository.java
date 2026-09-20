@@ -10,4 +10,6 @@ public interface ThresholdJpaRepository
         extends JpaRepository<ThresholdEntity, UUID> {
 
     Optional<ThresholdEntity> findByMeasurementType(String measurementType);
+
+    boolean existsByMeasurementType(String measurementType);
 }
